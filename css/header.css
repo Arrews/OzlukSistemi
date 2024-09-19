@@ -1,0 +1,146 @@
+ .header {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    width: 100%;
+    flex-shrink: 0;
+    align-self: stretch;
+    background-color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    box-shadow: 0px 4px 4px #00000040;
+  }
+  
+ .logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+ .element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    position: relative;
+  }
+  
+.img-ege-logo {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    object-fit: over;
+  }
+  
+ .ege-niversitesi {
+    position: relative;
+    width: fit-content;
+    font-family: var(--ba-l-k-regular-font-family);
+    font-weight: var(--ba-l-k-regular-font-weight);
+    color: var(--erlik-sistemimavi-tonlarfederal-blue);
+    font-size: var(--ba-l-k-regular-font-size);
+    letter-spacing: var(--ba-l-k-regular-letter-spacing);
+    line-height: var(--ba-l-k-regular-line-height);
+    white-space: nowrap;
+    font-style: var(--ba-l-k-regular-font-style);
+  }
+  
+ .location {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+    cursor: default;
+  }
+  
+ .location-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: var(--erlik-sistemibeyaz-tonlarplatinum);
+    border-radius: 20px;
+  }
+  
+ .location-text-wrapper:hover {
+    background-color: var(--erlik-sistemimavi-tonlarroyal-blue);
+    transition: all 0.2s ease-out;
+  }
+  
+ .location-text-wrapper:hover .location-text {
+    color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    font-style: italic;
+    transition: all 0.2s ease-out;
+  }
+  
+ .location-text {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--alt-yaz-ligth-font-family);
+    font-weight: var(--alt-yaz-ligth-font-weight);
+    color: var(--erlik-sistemimavi-tonlarroyal-blue);
+    font-size: var(--alt-yaz-ligth-font-size);
+    letter-spacing: var(--alt-yaz-ligth-letter-spacing);
+    line-height: var(--alt-yaz-ligth-line-height);
+    font-style: var(--alt-yaz-ligth-font-style);
+  }
+  
+ .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+ .mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .mode path {
+    transition: stroke 0.2s ease-out;
+  }
+  
+ .backup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    transition: fill 0.2s ease-out;
+  }
+  
+  .backup path {
+    transition: fill 0.2s ease-out;
+  }
+
+ .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    transition: transform 0.3s ease;
+  }
+  
+  .mode:hover path {
+    stroke: var(--erlik-sistemimavi-tonlarroyal-blue);
+  }
+
+  .backup:hover path {
+    fill: var(--erlik-sistemimavi-tonlarroyal-blue);
+  }
+
+  .avatar:hover {
+    transform: scale(0.8);
+  }

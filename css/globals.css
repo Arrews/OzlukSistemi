@@ -1,0 +1,49 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Urbanist:500,var(--alt-yaz-regular-font-weight),var(--paragraf-regular-font-weight)");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: none; 
+  color: inherit; 
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background-color:transparent;
+  border-radius:9999px
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #D2D5D9;
+  background-clip: content-box;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #BCD2DD;
+}

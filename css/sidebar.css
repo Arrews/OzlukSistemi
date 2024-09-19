@@ -1,0 +1,171 @@
+.sidebar {
+  display: flex;
+  height: inherit;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar-2 {
+  display: inline-flex;
+  height: inherit;
+}
+
+.sidebar-3 {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 4px 0 10px #00000040;
+  backdrop-filter: blur(12px) brightness(100%);
+  -webkit-backdrop-filter: blur(12px) brightness(100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+  border: 1px solid transparent;
+  border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)) 1;
+  transition: width 0.2s ease;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.icon-placement{
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  position: relative;
+  border-radius: 5px;
+  flex: 0 0 auto;
+  border: 2px solid transparent;
+  transition: all 0.2s ease-out;
+}
+
+.icon-text{
+  display: none;
+  max-width: 225px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--erlik-sistemimavi-tonlarfederal-blue);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--alt-yaz-regular-font-family);
+  font-size: var(--alt-yaz-regular-font-size);
+  font-style: var(--alt-yaz-regular-font-style);
+  font-weight: var(--alt-yaz-regular-font-weight);
+  line-height: var(--alt-yaz-regular-line-height);
+  letter-spacing: var(--alt-yaz-regular-letter-spacing);
+  transition: color 0.2s ease;
+  
+}
+
+
+
+.aktif {
+  border-bottom: 2px solid var(--erlik-sistemimavi-tonlarfederal-blue);
+  box-shadow: 0px -2px 14px 0px rgba(32, 22, 88, 0.2);
+  transition: border-bottom 0.2s ease-out, box-shadow 0.2s ease-out;
+
+}
+
+.icon:hover{
+  background: var(--erlik-sistemimavi-tonlarroyal-blue);
+  border: 2px solid transparent;
+  box-shadow: none;
+}
+
+.icon:hover .icon-text{
+  color: var(--erlik-sistemibeyaz-tonlarseasalt);
+}
+
+.icon:hover .vector-fill{
+  fill: var(--erlik-sistemibeyaz-tonlarseasalt);
+}
+
+.icon:hover .vector-stroke{
+  stroke: var(--erlik-sistemibeyaz-tonlarseasalt);
+}
+
+.icon:hover, .icon:hover .icon-text, .icon:hover .vector-fill, .icon:hover .vector-stroke{
+  transition: all 0.2s ease-out;
+}
+
+.vector-fill, .vector-stroke {
+  transition: all 0.2s ease-out;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  position: relative;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.divider-2 {
+  border: 0.5px solid var(--erlik-sistemimavi-tonlarvista-blue);
+  border-radius: 20px;
+  width: 42px;
+  transition: width 0.2s ease;
+}
+
+.linear-gradian {
+  width: 12px;
+  margin-left: -8px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 255, 239.7, 0.5) 0%,
+      rgba(53.43, 176.88, 219.94, 0.5) 50%,
+      rgba(106.87, 98.75, 200.17, 0.5) 100%
+  );
+}
+
+.expanded { 
+  width: 8px;
+  height: 32px;
+  stroke: var(--erlik-sistemibeyaz-tonlarplatinum);
+  transition: stroke 0.2s ease;
+}
+
+.expanded:hover path{
+  transition: stroke 0.2s ease;
+  stroke: var(--erlik-sistemisiyah-tonlarpaynes-gray);
+}
+
+.path-animation {
+  animation-name: pathD;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+}
+
+@keyframes pathD {
+  0% {
+    d: 'M2 30C2 18.8298 2 13.9149 2 2';
+  }
+  100% { 
+    d: 'M6 30L2.43027 18.4748C1.85658 16.84 1.85658 15.3 2.43027 13.5253L6 2';
+  }
+}

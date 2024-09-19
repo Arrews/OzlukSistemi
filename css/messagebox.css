@@ -1,0 +1,75 @@
+.messageBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 20px;
+    background: #FCFAFA;
+    position: absolute;
+    border: 2px solid #61677A;
+    border-radius: 10px;
+    width: 340px;
+    height: 187px;
+    left: calc(50% - 340px / 2);
+    top: calc(50% - 187px / 2 + 0.5px);
+}
+
+.mainText{
+    width: 300px;
+    height: 58px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    cursor: default;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 226px;
+    height: 49px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+}
+
+.cancel{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 108px;
+    height: 49px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border: 2px solid #61677A;
+}
+.ok{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #276AED;
+    gap: 10px;
+    width: 108px;
+    height: 49px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}

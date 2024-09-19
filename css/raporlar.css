@@ -1,0 +1,440 @@
+html,body {
+    overflow: hidden;
+}
+
+.raporlar {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: flex-start;
+    padding: 0px 0px 0px 60px;
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.raporlar .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.raporlar .main-title-placement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    width: 100%;
+}
+
+.raporlar .main-title {
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--ba-l-k-bold-font-family);
+    font-weight: var(--ba-l-k-bold-font-weight);
+    color: var(--erlik-sistemisiyah-tonlarnight);
+    font-size: var(--ba-l-k-bold-font-size);
+    letter-spacing: var(--ba-l-k-bold-letter-spacing);
+    line-height: var(--ba-l-k-bold-line-height);
+    white-space: nowrap;
+    font-style: var(--ba-l-k-bold-font-style);
+}
+
+.raporlar .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.raporlar .bck-btn,
+.raporlar .imp-btn {
+    display: inline-flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    flex: 0 0 auto;
+    background-color: var(--erlik-sistemimavi-tonlarvista-blue);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: background-color 0.2s ease-in-out, stroke 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.raporlar .bck-btn:hover,
+.raporlar .imp-btn:hover {
+    border: 2px solid var(--erlik-sistemimavi-tonlarvista-blue);
+    background-color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    transition: background-color 0.2s ease-in-out, stroke 0.2s ease-in-out;
+}
+
+.raporlar .docImp {
+    width: 24px;
+    height: 30px;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    cursor: pointer;
+}
+
+.raporlar .bck {
+    width: 24px;
+    height: 30px;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    cursor: pointer;
+}
+
+.raporlar .bck path,
+.raporlar .docImp path {
+    transition: stroke 0.2s ease-in-out;
+}
+
+.raporlar .bck-btn:hover .bck path,
+.raporlar .imp-btn:hover .docImp path {
+    stroke: var(--erlik-sistemimavi-tonlarvista-blue);
+    transition: stroke 0.2s ease-in-out;
+}
+
+.raporlar .text-wrapper {
+    width: fit-content;
+    margin-top: -5.5px;
+    margin-bottom: -3.5px;
+    font-family: var(--alt-yaz-regular-font-family);
+    font-weight: var(--alt-yaz-regular-font-weight);
+    color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    font-size: var(--alt-yaz-regular-font-size);
+    letter-spacing: var(--alt-yaz-regular-letter-spacing);
+    line-height: var(--alt-yaz-regular-line-height);
+    font-style: var(--alt-yaz-regular-font-style);
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.raporlar .bck-btn:hover .text-wrapper,
+.raporlar .imp-btn:hover .text-wrapper {
+    color: var(--erlik-sistemimavi-tonlarvista-blue);
+    transition: color 0.2s ease-in-out;
+}
+
+.raporlar .table {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.raporlar .filter-area {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    align-self: stretch;
+    position: relative;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    border: 2px solid var(--erlik-sistemimavi-tonlarvista-blue);
+}
+
+.raporlar .filter-inputs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.raporlar .filter-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 4px;
+}
+
+.raporlar .filter-title {
+    font-weight: var(--paragraf-regular-font-weight);
+    color: var(--erlik-sistemisiyah-tonlarnight);
+    width: fit-content;
+    margin-top: -1px;
+    margin-left: 2px;
+    font-family: var(--paragraf-regular-font-family);
+    font-size: var(--paragraf-regular-font-size);
+    letter-spacing: var(--paragraf-regular-letter-spacing);
+    line-height: var(--paragraf-regular-line-height);
+    white-space: nowrap;
+    font-style: var(--paragraf-regular-font-style);
+}
+
+.raporlar .filter-select-area {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: var(--shadows-focus-states-secondary);
+}
+
+.raporlar .filter-select {
+    display: flex;
+    width: inherit;
+    font-family: var(--paragraf-regular-font-family);
+    font-weight: var(--paragraf-regular-font-weight);
+    color: var(--erlik-sistemisiyah-tonlarpaynes-gray);
+    font-size: var(--paragraf-regular-font-size);
+    letter-spacing: var(--paragraf-regular-letter-spacing);
+    line-height: var(--paragraf-regular-line-height);
+    font-style: var(--paragraf-regular-font-style);
+    background: transparent;
+    border: none;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.raporlar .filter-select:focus-visible {
+    outline: none;
+    color: var(--erlik-sistemisiyah-tonlareeire-black);
+    transition: all 0.2s ease-out;
+
+}
+
+.raporlar .filter-btn {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--erlik-sistemimavi-tonlarvista-blue);
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.raporlar .filter-btn-text {
+    width: fit-content;
+    margin-top: -5.5px;
+    margin-bottom: -3.5px;
+    font-family: var(--alt-yaz-regular-font-family);
+    font-weight: var(--alt-yaz-regular-font-weight);
+    color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    font-size: var(--alt-yaz-regular-font-size);
+    letter-spacing: var(--alt-yaz-regular-letter-spacing);
+    line-height: var(--alt-yaz-regular-line-height);
+    font-style: var(--alt-yaz-regular-font-style);
+    transition: all 0.2s ease-in-out;
+}
+
+.raporlar .filter-btn:hover {
+    background: var(--erlik-sistemibeyaz-tonlarseasalt);
+    border-color: var(--erlik-sistemimavi-tonlarvista-blue);
+    transition: all 0.2s ease-in-out;
+}
+
+.raporlar .filter-btn:hover .filter-btn-text {
+    color: var(--erlik-sistemimavi-tonlarvista-blue);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Tablo CSS'leri buradan itibaren düzeltilecek! */
+
+.raporlar .data-table {
+    flex-direction: column;
+    flex: 0 0 auto;
+    margin-bottom: -2px;
+    margin-left: -2px;
+    margin-right: -2px;
+    background-color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: var(--erlik-sistemimavi-tonlarvista-blue);
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    width: 100%;
+}
+
+.header-row {
+    display: flex;
+    height: 50px;
+    align-items: flex-start;
+    align-self: stretch;
+    width: 100%;
+}
+
+.table-rows {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 350px;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 12px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    margin-top: -0.5px;
+    margin-bottom: -0.5px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+    flex-grow: 1;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-color: var(--erlik-sistemibeyaz-tonlarplatinum);
+}
+
+.title {
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--paragraf-bold-font-family);
+    font-weight: var(--paragraf-bold-font-weight);
+    color: var(--erlik-sistemisiyah-tonlarnight);
+    font-size: var(--paragraf-bold-font-size);
+    letter-spacing: var(--paragraf-bold-letter-spacing);
+    line-height: var(--paragraf-bold-line-height);
+    white-space: nowrap;
+    font-style: var(--paragraf-bold-font-style);
+}
+
+.course-table {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    margin-bottom: -2px;
+    margin-left: -2px;
+    margin-right: -2px;
+    background-color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: var(--erlik-sistemimavi-tonlarvista-blue);
+}
+
+.row {
+    display: flex;
+    height: 50px;
+    align-items: flex-start;
+    align-self: stretch;
+    width: 100%;
+}
+
+.cell {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 50px;
+    align-items: flex-start;
+    justify-content: center;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-color: var(--erlik-sistemibeyaz-tonlarplatinum);
+}
+
+.cell-2 {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 50px;
+    align-items: flex-start;
+    justify-content: center;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-color: var(--erlik-sistemibeyaz-tonlarplatinum);
+}
+
+/* Tablo CSS'leri burada bittecek */
+
+.raporlar .alert-bar-divider{
+    position: absolute;
+    width: 100%;
+    height: 1%;
+    top: 0;
+    display: none;
+    justify-content: center;
+}
+
+.raporlar .alert-bar {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 20px;
+    background-color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: var(--uyar-renklerikrmz);
+    box-shadow: var(--alert-box-shadows-wrong);
+}
+
+.raporlar .alert-bar-content{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    padding: 14px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.raporlar .alert-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.raporlar .message {
+    flex: 1;
+    font-family: var(--paragraf-regular-font-family);
+    font-weight: var(--paragraf-regular-font-weight);
+    color: var(--erlik-sistemisiyah-tonlareeire-black);
+    font-size: var(--paragraf-regular-font-size);
+    letter-spacing: var(--paragraf-regular-letter-spacing);
+    line-height: var(--paragraf-regular-line-height);
+    font-style: var(--paragraf-regular-font-style);
+}
+
+.raporlar .alert-bar-progress{
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    width: 100%;
+    transition: width linear;
+    overflow: hidden;
+}

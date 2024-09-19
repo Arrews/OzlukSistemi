@@ -1,0 +1,100 @@
+.property-default {
+    display: flex;
+    width: 332px;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    position: relative;
+    background-color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: var(--erlik-sistemisiyah-tonlarpaynes-gray);
+    box-shadow: var(--alert-box-shadows-defualt);
+}
+
+.property-default .text-wrapper {
+    position: relative;
+    flex: 1;
+    font-family: var(--paragraf-regular-font-family);
+    font-weight: var(--paragraf-regular-font-weight);
+    color: var(--erlik-sistemisiyah-tonlareeire-black);
+    font-size: var(--paragraf-regular-font-size);
+    letter-spacing: var(--paragraf-regular-letter-spacing);
+    line-height: var(--paragraf-regular-line-height);
+    font-style: var(--paragraf-regular-font-style);
+}
+
+.property-default .alert-rigth-icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+
+.property-warning {
+    display: flex;
+    width: 332px;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    position: relative;
+    background-color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: var(--uyar-renklerisar);
+    box-shadow: var(--alert-box-shadows-warning);
+}
+
+.property-warning .img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.property-warning .text-wrapper {
+    position: relative;
+    flex: 1;
+    font-family: var(--paragraf-regular-font-family);
+    font-weight: var(--paragraf-regular-font-weight);
+    color: var(--erlik-sistemisiyah-tonlareeire-black);
+    font-size: var(--paragraf-regular-font-size);
+    letter-spacing: var(--paragraf-regular-letter-spacing);
+    line-height: var(--paragraf-regular-line-height);
+    font-style: var(--paragraf-regular-font-style);
+}
+
+.property-wrong {
+    display: flex;
+    width: 332px;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    position: relative;
+    background-color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: var(--uyar-renklerikrmz);
+    box-shadow: var(--alert-box-shadows-wrong);
+  }
+  
+  .property-wrong .img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .property-wrong .text-wrapper {
+    position: relative;
+    flex: 1;
+    font-family: var(--paragraf-regular-font-family);
+    font-weight: var(--paragraf-regular-font-weight);
+    color: var(--erlik-sistemisiyah-tonlareeire-black);
+    font-size: var(--paragraf-regular-font-size);
+    letter-spacing: var(--paragraf-regular-letter-spacing);
+    line-height: var(--paragraf-regular-line-height);
+    font-style: var(--paragraf-regular-font-style);
+  }
+  

@@ -1,0 +1,741 @@
+.kullanclar {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: flex-start;
+    padding: 0px 0px 0px 60px;
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+  
+  .kullanclar .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+  }
+  
+  .kullanclar .div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .kullanclar .main-title {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--ba-l-k-bold-font-family);
+    font-weight: var(--ba-l-k-bold-font-weight);
+    color: var(--erlik-sistemisiyah-tonlarnight);
+    font-size: var(--ba-l-k-bold-font-size);
+    letter-spacing: var(--ba-l-k-bold-letter-spacing);
+    line-height: var(--ba-l-k-bold-line-height);
+    white-space: nowrap;
+    font-style: var(--ba-l-k-bold-font-style);
+  }
+  
+  .kullanclar .add-btn {
+    display: inline-flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--erlik-sistemimavi-tonlarvista-blue);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .kullanclar .plus {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-top: -2px;
+    margin-bottom: -2px;
+  }
+  
+  .kullanclar .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -5.5px;
+    margin-bottom: -3.5px;
+    font-family: var(--alt-yaz-regular-font-family);
+    font-weight: var(--alt-yaz-regular-font-weight);
+    color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    font-size: var(--alt-yaz-regular-font-size);
+    letter-spacing: var(--alt-yaz-regular-letter-spacing);
+    line-height: var(--alt-yaz-regular-line-height);
+    font-style: var(--alt-yaz-regular-font-style);
+  }
+  
+  .kullanclar .table {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .kullanclar .search-bar {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .kullanclar .div-2 {
+    display: flex;
+    width: 220px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: var(--erlik-sistemimavi-tonlarvista-blue);
+  }
+  
+  .kullanclar .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -0.5px;
+    font-family: var(--alt-yaz-regular-font-family);
+    font-weight: var(--alt-yaz-regular-font-weight);
+    color: var(--erlik-sistemisiyah-tonlarnight);
+    font-size: var(--alt-yaz-regular-font-size);
+    letter-spacing: var(--alt-yaz-regular-letter-spacing);
+    line-height: var(--alt-yaz-regular-line-height);
+    font-style: var(--alt-yaz-regular-font-style);
+  }
+  
+  .kullanclar .img-2 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .kullanclar .course-table {
+    flex-direction: column;
+    flex: 0 0 auto;
+    margin-bottom: -2px;
+    margin-left: -2px;
+    margin-right: -2px;
+    background-color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: var(--erlik-sistemimavi-tonlarvista-blue);
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .kullanclar .row {
+    height: 50px;
+    background-color: #ffffff00;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .kullanclar .cell {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 50px;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-color: var(--erlik-sistemibeyaz-tonlarplatinum);
+  }
+  
+  .kullanclar .content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 12px;
+    align-self: stretch;
+    width: 100%;
+    margin-top: -0.5px;
+    margin-bottom: -0.5px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .kullanclar .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-color: var(--erlik-sistemibeyaz-tonlarplatinum);
+  }
+  
+  .kullanclar .title {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--paragraf-bold-font-family);
+    font-weight: var(--paragraf-bold-font-weight);
+    color: var(--erlik-sistemisiyah-tonlarnight);
+    font-size: var(--paragraf-bold-font-size);
+    letter-spacing: var(--paragraf-bold-letter-spacing);
+    line-height: var(--paragraf-bold-line-height);
+    white-space: nowrap;
+    font-style: var(--paragraf-bold-font-style);
+  }
+  
+  .kullanclar .img-3 {
+    position: relative;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .kullanclar .div-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    overflow: hidden;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-color: var(--erlik-sistemibeyaz-tonlarplatinum);
+  }
+  
+  .kullanclar .content-2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 12px;
+    align-self: stretch;
+    width: 100%;
+    margin-top: -0.5px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .kullanclar .content-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 12px;
+    align-self: stretch;
+    width: 100%;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .kullanclar .text-wrapper-3 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--paragraf-regular-font-family);
+    font-weight: var(--paragraf-regular-font-weight);
+    color: var(--erlik-sistemisiyah-tonlareeire-black);
+    font-size: var(--paragraf-regular-font-size);
+    letter-spacing: var(--paragraf-regular-letter-spacing);
+    line-height: var(--paragraf-regular-line-height);
+    font-style: var(--paragraf-regular-font-style);
+  }
+  
+  .kullanclar .cell-2 {
+    display: inline-flex;
+    flex-direction: column;
+    height: 50px;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-color: var(--erlik-sistemibeyaz-tonlarplatinum);
+  }
+  
+  .kullanclar .hortizonal-menu-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 12px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .kullanclar .hamburger-menu {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: absolute;
+    top: 312px;
+    left: 1322px;
+    border-radius: 6px;
+  }
+  
+  .kullanclar .menu {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1px;
+    flex: 0 0 auto;
+    border-radius: 6px;
+    border: 2px solid;
+    border-color: var(--erlik-sistemimavi-tonlarvista-blue);
+    align-items: center;
+    position: relative;
+  }
+  
+  .kullanclar .menu-iteams {
+    display: flex;
+    width: 100px;
+    height: 30px;
+    gap: 2px;
+    padding: 0px 6px;
+    background-color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    border-radius: 6px 6px 0px 0px;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+  }
+  
+  .kullanclar .img-4 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .kullanclar .text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    font-family: "Urbanist", Helvetica;
+    font-weight: 700;
+    color: var(--erlik-sistemisiyah-tonlareeire-black);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .kullanclar .menu-iteams-2 {
+    display: flex;
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    gap: 2px;
+    padding: 0px 6px;
+    position: relative;
+    background-color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    border-radius: 0px 0px 6px 6px;
+    overflow: hidden;
+  }
+  
+  .kullanclar .text-wrapper-5 {
+    position: relative;
+    width: fit-content;
+    font-family: "Urbanist", Helvetica;
+    font-weight: 700;
+    color: var(--erlik-sistemimavi-tonlarvista-blue);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .kullanclar .alert-bar {
+    display: flex;
+    width: 332px;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    position: absolute;
+    top: 82px;
+    left: 554px;
+    background-color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: var(--uyar-renkleriyeil);
+    box-shadow: 0px 1px 1px #2f9461, 0px 0px 0px 1px #2f9461, 0px 2px 5px #2f9461;
+  }
+  
+  .kullanclar .message {
+    position: relative;
+    flex: 1;
+    font-family: var(--paragraf-regular-font-family);
+    font-weight: var(--paragraf-regular-font-weight);
+    color: var(--erlik-sistemisiyah-tonlareeire-black);
+    font-size: var(--paragraf-regular-font-size);
+    letter-spacing: var(--paragraf-regular-letter-spacing);
+    line-height: var(--paragraf-regular-line-height);
+    font-style: var(--paragraf-regular-font-style);
+  }
+  
+  .kullanclar .input-area-users {
+    display: flex;
+    flex-direction: column;
+    width: 1444px;
+    height: 404px;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 40px 50px;
+    position: absolute;
+    top: 622px;
+    left: -2px;
+    background-color: #ffffff;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+    border: 2px solid;
+    border-color: var(--erlik-sistemimavi-tonlarvista-blue);
+    backdrop-filter: blur(100px) brightness(100%);
+    -webkit-backdrop-filter: blur(100px) brightness(100%);
+  }
+  
+  .kullanclar .main-label {
+    position: relative;
+    width: fit-content;
+    font-family: var(--ba-l-k-bold-font-family);
+    font-weight: var(--ba-l-k-bold-font-weight);
+    color: var(--erlik-sistemisiyah-tonlarnight);
+    font-size: var(--ba-l-k-bold-font-size);
+    letter-spacing: var(--ba-l-k-bold-letter-spacing);
+    line-height: var(--ba-l-k-bold-line-height);
+    white-space: nowrap;
+    font-style: var(--ba-l-k-bold-font-style);
+  }
+  
+  .kullanclar .buttons {
+    gap: 20px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .kullanclar .cancel-button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 22px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    background-color: var(--grey-100);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: var(--erlik-sistemimavi-tonlarvista-blue);
+  }
+  
+  .kullanclar .state-layer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .kullanclar .text-wrapper-6 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--alt-yaz-regular-font-family);
+    font-weight: var(--alt-yaz-regular-font-weight);
+    color: var(--erlik-sistemimavi-tonlarvista-blue);
+    font-size: var(--alt-yaz-regular-font-size);
+    text-align: center;
+    letter-spacing: var(--alt-yaz-regular-letter-spacing);
+    line-height: var(--alt-yaz-regular-line-height);
+    font-style: var(--alt-yaz-regular-font-style);
+  }
+  
+  .kullanclar .save-button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 22px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-right: -2px;
+    background-color: var(--erlik-sistemimavi-tonlarvista-blue);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: var(--erlik-sistemimavi-tonlarvista-blue);
+  }
+  
+  .kullanclar .state-layer-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+  
+  .kullanclar .text-wrapper-7 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--alt-yaz-regular-font-family);
+    font-weight: var(--alt-yaz-regular-font-weight);
+    color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    font-size: var(--alt-yaz-regular-font-size);
+    text-align: center;
+    letter-spacing: var(--alt-yaz-regular-letter-spacing);
+    line-height: var(--alt-yaz-regular-line-height);
+    font-style: var(--alt-yaz-regular-font-style);
+  }
+  
+  .kullanclar .inputs {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+  }
+  
+  .kullanclar .column {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .kullanclar .input {
+    flex-direction: column;
+    width: 320px;
+    align-items: flex-start;
+    flex: 0 0 auto;
+    display: flex;
+    gap: 8px;
+    position: relative;
+  }
+  
+  .kullanclar .input-state-layer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .kullanclar .input-with-label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .kullanclar .title-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--paragraf-regular-font-family);
+    font-weight: var(--paragraf-regular-font-weight);
+    color: var(--erlik-sistemisiyah-tonlarpaynes-gray);
+    font-size: var(--paragraf-regular-font-size);
+    letter-spacing: var(--paragraf-regular-letter-spacing);
+    line-height: var(--paragraf-regular-line-height);
+    white-space: nowrap;
+    font-style: var(--paragraf-regular-font-style);
+  }
+  
+  .kullanclar .input-layer {
+    align-items: center;
+    padding: 10px 14px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadows-focus-states-secondary);
+    display: flex;
+    gap: 8px;
+    position: relative;
+  }
+  
+  .kullanclar .input-2 {
+    align-items: center;
+    flex: 1;
+    flex-grow: 1;
+    display: flex;
+    gap: 8px;
+    position: relative;
+  }
+  
+  .kullanclar .text {
+    position: relative;
+    flex: 1;
+    margin-top: -1px;
+    opacity: 0.6;
+    font-family: var(--paragraf-regular-font-family);
+    font-weight: var(--paragraf-regular-font-weight);
+    color: var(--erlik-sistemisiyah-tonlarpaynes-gray);
+    font-size: var(--paragraf-regular-font-size);
+    letter-spacing: var(--paragraf-regular-letter-spacing);
+    line-height: var(--paragraf-regular-line-height);
+    font-style: var(--paragraf-regular-font-style);
+    border: none;
+  }
+  .kullanclar .text:focus-visible{
+    outline: none;
+    color: var(--erlik-sistemisiyah-tonlareeire-black);
+  }
+  
+  .kullanclar .message-box {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 20px;
+    position: absolute;
+    top: 417px;
+    left: 548px;
+    background-color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid;
+    border-color: var(--erlik-sistemisiyah-tonlarpaynes-gray);
+  }
+  
+  .kullanclar .main-text {
+    position: relative;
+    width: 300px;
+    font-family: var(--alt-yaz-regular-font-family);
+    font-weight: var(--alt-yaz-regular-font-weight);
+    color: var(--erlik-sistemisiyah-tonlareeire-black);
+    font-size: var(--alt-yaz-regular-font-size);
+    text-align: center;
+    letter-spacing: var(--alt-yaz-regular-letter-spacing);
+    line-height: var(--alt-yaz-regular-line-height);
+    font-style: var(--alt-yaz-regular-font-style);
+  }
+  
+  .kullanclar .buttons-2 {
+    justify-content: center;
+    gap: 10px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .kullanclar .cancel {
+    display: flex;
+    width: 108px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 30px;
+    position: relative;
+    border: 1px solid;
+    border-color: var(--erlik-sistemisiyah-tonlareeire-black);
+  }
+  
+  .kullanclar .button-text {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    margin-left: -3px;
+    margin-right: -3px;
+    font-family: var(--alt-yaz-regular-font-family);
+    font-weight: var(--alt-yaz-regular-font-weight);
+    color: var(--erlik-sistemisiyah-tonlareeire-black);
+    font-size: var(--alt-yaz-regular-font-size);
+    text-align: center;
+    letter-spacing: var(--alt-yaz-regular-letter-spacing);
+    line-height: var(--alt-yaz-regular-line-height);
+    font-style: var(--alt-yaz-regular-font-style);
+  }
+  
+  .kullanclar .ok {
+    display: flex;
+    width: 108px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px 30px;
+    position: relative;
+    background-color: var(--erlik-sistemimavi-tonlarroyal-blue);
+  }
+  
+  .kullanclar .button-text-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--alt-yaz-bold-font-family);
+    font-weight: var(--alt-yaz-bold-font-weight);
+    color: var(--erlik-sistemibeyaz-tonlarseasalt);
+    font-size: var(--alt-yaz-bold-font-size);
+    text-align: center;
+    letter-spacing: var(--alt-yaz-bold-letter-spacing);
+    line-height: var(--alt-yaz-bold-line-height);
+    font-style: var(--alt-yaz-bold-font-style);
+  }
+  

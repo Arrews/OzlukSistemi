@@ -1,0 +1,256 @@
+.alert-bar {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  position: absolute;
+  top: 22px;
+  background-color: var(--erlik-sistemibeyaz-tonlarseasalt);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--uyar-renklerikrmz);
+  box-shadow: var(--alert-box-shadows-wrong)
+}
+.alert-bar-divider{
+  position: absolute;
+  width: 100%;
+  height: 1%;
+  top: 0;
+  display: none;
+  justify-content: center;
+}
+.message {
+  position: relative;
+  flex: 1;
+  font-family: var(--paragraf-regular-font-family);
+  font-weight: var(--paragraf-regular-font-weight);
+  color: var(--erlik-sistemisiyah-tonlareeire-black);
+  font-size: var(--paragraf-regular-font-size);
+  letter-spacing: var(--paragraf-regular-letter-spacing);
+  line-height: var(--paragraf-regular-line-height);
+  font-style: var(--paragraf-regular-font-style);
+}
+
+.giri-yap {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.giri-yap .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.giri-yap .panel {
+  display: flex;
+  width: 860px;
+  height: 520px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  position: relative;
+  flex-shrink: 0;
+  background-color: var(--erlik-sistemibeyaz-tonlarseasalt);
+  border-radius: 20px;
+  border: 4px solid var(--erlik-sistemimavi-tonlarvista-blue);
+}
+
+.giri-yap .logo {
+  display: flex;
+  width: 376px;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.giri-yap .img-ege-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.giri-yap .img-ege-logo {
+  width: 128px;
+  height: 128px;
+}
+
+.giri-yap .text {
+  position: relative;
+  width: fit-content;
+  font-family: "Urbanist", Helvetica;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--erlik-sistemimavi-tonlarfederal-blue);
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: 45px;
+}
+
+.giri-yap .divider {
+  position: relative;
+  width: 2px;
+  height: 102px;
+}
+
+.giri-yap .login-panel {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.giri-yap .input-state-layer-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+  transition: all 0.2s ease;
+}
+
+.giri-yap .input-state-layer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.giri-yap .input-with-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.giri-yap .title {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--paragraf-regular-font-family);
+  font-weight: var(--paragraf-regular-font-weight);
+  color: var(--erlik-sistemisiyah-tonlarpaynes-gray);
+  font-size: var(--paragraf-regular-font-size);
+  letter-spacing: var(--paragraf-regular-letter-spacing);
+  line-height: var(--paragraf-regular-line-height);
+  white-space: nowrap;
+  font-style: var(--paragraf-regular-font-style);
+}
+
+.giri-yap .input-layer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--erlik-sistemibeyaz-tonlarseasalt);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadows-focus-states-secondary);
+}
+
+.giri-yap .input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  border: 0;
+}
+.giri-yap .input:focus-visible{
+  outline: none;
+  color: var(--erlik-sistemisiyah-tonlareeire-black)
+}
+
+.giri-yap .text-wrapper {
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  opacity: 0.6;
+  font-family: var(--paragraf-regular-font-family);
+  font-weight: var(--paragraf-regular-font-weight);
+  color: var(--erlik-sistemisiyah-tonlarpaynes-gray);
+  font-size: var(--paragraf-regular-font-size);
+  letter-spacing: var(--paragraf-regular-letter-spacing);
+  line-height: var(--paragraf-regular-line-height);
+  font-style: var(--paragraf-regular-font-style);
+  transition: all 0.2s ease;
+}
+
+.giri-yap .icons {
+  position: relative;
+  width: 20.5px;
+  height: 20px;
+  margin-right: -0.25px;
+  cursor: pointer;
+}
+
+.giri-yap .login-btn {
+  display: flex;
+  justify-content: center;
+  padding: 14px 22px;
+  width: 100%;
+  background-color: var(--erlik-sistemimavi-tonlarvista-blue);
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: var(--erlik-sistemimavi-tonlarvista-blue);
+  font-family: var(--paragraf-regular-font-family);
+  font-weight: var(--paragraf-regular-font-weight);
+  color: var(--erlik-sistemibeyaz-tonlarseasalt);
+  font-size: var(--paragraf-regular-font-size);
+  letter-spacing: var(--paragraf-regular-letter-spacing);
+  line-height: var(--paragraf-regular-line-height);
+  white-space: nowrap;
+  font-style: var(--paragraf-regular-font-style);
+  cursor:pointer;
+  transition: all 0.2s ease;
+}
+
+.giri-yap .input-state-layer-wrapper:hover .title, .giri-yap .input-state-layer-wrapper:hover .text-wrapper{
+  color: var(--erlik-sistemisiyah-tonlareeire-black);
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+.giri-yap .input-state-layer-wrapper:hover .input-layer {
+  border: 2px solid var(--erlik-sistemimavi-tonlarvista-blue);
+  background: var(--erlik-sistemibeyaz-tonlarseasalt);
+  box-shadow:  0px 1px 10px 0px var(--erlik-sistemimavi-tonlarvista-blue);
+  transition: all 0.2s ease;
+}
+
+.giri-yap .text-wrapper:focus-visible{
+  color: var(--erlik-sistemisiyah-tonlareeire-black);
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+.giri-yap .login-btn:hover{
+  background: var(--erlik-sistemimavi-tonlarroyal-blue);
+  border-color: var(--erlik-sistemimavi-tonlarroyal-blue);
+  transition: all 0.2s ease;
+}
